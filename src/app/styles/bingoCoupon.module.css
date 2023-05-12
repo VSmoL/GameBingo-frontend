@@ -1,0 +1,55 @@
+.coupons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.coupon {
+  display: flex;
+  flex-basis: 19%;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 0 4px black;
+  margin: 5px;
+  max-height: 225px;
+}
+
+.couponInner {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5px;
+}
+
+.couponText {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tableCoupon td{
+  padding: 5px;
+}
+
+.free{
+  background-color: yellow;
+}
+
+.couponBody{
+  display: flex;
+  flex-direction: column;
+}
+
+.couponBodyNumbers{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.couponBodyNumber{
+  border: solid 1px black;
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

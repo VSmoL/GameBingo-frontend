@@ -15,7 +15,7 @@ export default function BingoNumberGenerator ({onDrawnNumber}: BingoNumberGenera
     const number = bingoNumbers[index];
     bingoNumbers.splice(index, 1); // Remove the number from the array so it can't be generated again
     setBingoNumbers(bingoNumbers)
-    console.log("remaining numbers", bingoNumbers)
+    // console.log("remaining numbers", bingoNumbers)
     setGeneratedNumber(number)
     onDrawnNumber(number)
   };

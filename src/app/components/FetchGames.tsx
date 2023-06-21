@@ -11,7 +11,7 @@ interface FetchGamesProps {
 export default function FetchGames({onAddGames}: FetchGamesProps) {
 
   async function getDataFromApi() {
-    const res = await fetch(`http://localhost:8081/games/allgames`);
+    const res = await fetch(`http://localhost:8081/game/all`);
     const data = await res.json();
 
     const allData: BingoCouponType[] = [];

@@ -8,8 +8,8 @@ interface SavePlayedRoundProps {
 
 export default function PostSavePlayedRound({bingoCoupons, drawnNumbers}: SavePlayedRoundProps) {
 
-    console.log(bingoCoupons)
-    console.log(drawnNumbers)
+    // console.log(bingoCoupons)
+    // console.log(drawnNumbers)
 
     const postContent = {
         bingoCoupons: bingoCoupons,
@@ -17,7 +17,8 @@ export default function PostSavePlayedRound({bingoCoupons, drawnNumbers}: SavePl
     }
 
   async function postPlayedRound() {
-    const res = await fetch(`http://localhost:8081/games/savePlayedRound`, {
+    console.log(postContent)
+    const res = await fetch(`http://localhost:8081/bingo/save`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
